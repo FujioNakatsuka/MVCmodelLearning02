@@ -13,10 +13,12 @@
 		8DB2111924E8E096007DC488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB2111724E8E096007DC488 /* Main.storyboard */; };
 		8DB2111B24E8E098007DC488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB2111A24E8E098007DC488 /* Assets.xcassets */; };
 		8DB2111E24E8E098007DC488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB2111C24E8E098007DC488 /* LaunchScreen.storyboard */; };
+		8DB2112924E8E1BE007DC488 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2112824E8E1BE007DC488 /* Calc.swift */; };
+		8DB2112B24E8F986007DC488 /* StringPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2112A24E8F986007DC488 /* StringPlus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8DB2110E24E8E096007DC488 /* MVCmodelLearning01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCmodelLearning01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB2110E24E8E096007DC488 /* MVCmodelLearning02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCmodelLearning02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB2111124E8E096007DC488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DB2111324E8E096007DC488 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8DB2111524E8E096007DC488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		8DB2111A24E8E098007DC488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DB2111D24E8E098007DC488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DB2111F24E8E098007DC488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DB2112824E8E1BE007DC488 /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
+		8DB2112A24E8F986007DC488 /* StringPlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPlus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		8DB2110524E8E096007DC488 = {
 			isa = PBXGroup;
 			children = (
-				8DB2111024E8E096007DC488 /* MVCmodelLearning01 */,
+				8DB2111024E8E096007DC488 /* MVCmodelLearning02 */,
 				8DB2110F24E8E096007DC488 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +52,57 @@
 		8DB2110F24E8E096007DC488 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DB2110E24E8E096007DC488 /* MVCmodelLearning01.app */,
+				8DB2110E24E8E096007DC488 /* MVCmodelLearning02.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8DB2111024E8E096007DC488 /* MVCmodelLearning01 */ = {
+		8DB2111024E8E096007DC488 /* MVCmodelLearning02 */ = {
+			isa = PBXGroup;
+			children = (
+				8DB2112724E8E10A007DC488 /* Model */,
+				8DB2112624E8E0F9007DC488 /* View */,
+				8DB2112524E8E0E3007DC488 /* Controller */,
+				8DB2111F24E8E098007DC488 /* Info.plist */,
+			);
+			path = MVCmodelLearning02;
+			sourceTree = "<group>";
+		};
+		8DB2112524E8E0E3007DC488 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				8DB2111124E8E096007DC488 /* AppDelegate.swift */,
-				8DB2111324E8E096007DC488 /* SceneDelegate.swift */,
 				8DB2111524E8E096007DC488 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DB2112624E8E0F9007DC488 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DB2111324E8E096007DC488 /* SceneDelegate.swift */,
 				8DB2111724E8E096007DC488 /* Main.storyboard */,
 				8DB2111A24E8E098007DC488 /* Assets.xcassets */,
 				8DB2111C24E8E098007DC488 /* LaunchScreen.storyboard */,
-				8DB2111F24E8E098007DC488 /* Info.plist */,
 			);
-			path = MVCmodelLearning01;
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DB2112724E8E10A007DC488 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DB2112824E8E1BE007DC488 /* Calc.swift */,
+				8DB2112A24E8F986007DC488 /* StringPlus.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DB2110D24E8E096007DC488 /* MVCmodelLearning01 */ = {
+		8DB2110D24E8E096007DC488 /* MVCmodelLearning02 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DB2112224E8E098007DC488 /* Build configuration list for PBXNativeTarget "MVCmodelLearning01" */;
+			buildConfigurationList = 8DB2112224E8E098007DC488 /* Build configuration list for PBXNativeTarget "MVCmodelLearning02" */;
 			buildPhases = (
 				8DB2110A24E8E096007DC488 /* Sources */,
 				8DB2110B24E8E096007DC488 /* Frameworks */,
@@ -82,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = MVCmodelLearning01;
+			name = MVCmodelLearning02;
 			productName = MVCmodelLearning01;
-			productReference = 8DB2110E24E8E096007DC488 /* MVCmodelLearning01.app */;
+			productReference = 8DB2110E24E8E096007DC488 /* MVCmodelLearning02.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8DB2110924E8E096007DC488 /* Build configuration list for PBXProject "MVCmodelLearning01" */;
+			buildConfigurationList = 8DB2110924E8E096007DC488 /* Build configuration list for PBXProject "MVCmodelLearning02" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DB2110D24E8E096007DC488 /* MVCmodelLearning01 */,
+				8DB2110D24E8E096007DC488 /* MVCmodelLearning02 */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB2112B24E8F986007DC488 /* StringPlus.swift in Sources */,
+				8DB2112924E8E1BE007DC488 /* Calc.swift in Sources */,
 				8DB2111624E8E096007DC488 /* ViewController.swift in Sources */,
 				8DB2111224E8E096007DC488 /* AppDelegate.swift in Sources */,
 				8DB2111424E8E096007DC488 /* SceneDelegate.swift in Sources */,
@@ -286,15 +318,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XHN5S8Z76G;
-				INFOPLIST_FILE = MVCmodelLearning01/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVCmodelLearning02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nifty.cbm01799.MVCmodelLearning01;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MVCmodelLearning02;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,22 +336,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XHN5S8Z76G;
-				INFOPLIST_FILE = MVCmodelLearning01/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVCmodelLearning02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nifty.cbm01799.MVCmodelLearning01;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MVCmodelLearning02;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DB2110924E8E096007DC488 /* Build configuration list for PBXProject "MVCmodelLearning01" */ = {
+		8DB2110924E8E096007DC488 /* Build configuration list for PBXProject "MVCmodelLearning02" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DB2112024E8E098007DC488 /* Debug */,
@@ -328,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DB2112224E8E098007DC488 /* Build configuration list for PBXNativeTarget "MVCmodelLearning01" */ = {
+		8DB2112224E8E098007DC488 /* Build configuration list for PBXNativeTarget "MVCmodelLearning02" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DB2112324E8E098007DC488 /* Debug */,
