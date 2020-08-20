@@ -87,12 +87,20 @@ class ViewController: UIViewController {
 
         } else {print("Not only numeric")
         stringLabel.text = stplus.stringPlus(moji1: textField1.text!, moji2: textField2.text!)
-           }
+      }
   
     
         
 }
     
+    @IBAction func clearAllButton(_ sender: Any) {
+        
+        textField1.text = ""
+        textField2.text = ""
+        resultLabel.text = "結果"
+        stringLabel.text = "文字列"
+        
+    }
     
 }
 
